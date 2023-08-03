@@ -1,0 +1,54 @@
+﻿@page "/RunPage"
+@inject NavigationManager NavigationManager
+
+<div class="container">
+
+    <div class="header">
+
+            <h1>CryptoWars</h1>
+
+    </div>
+
+    <div class="contener">
+
+        <div class="row h-80">
+            <div class="col">
+                <h1></h1>  
+                <h2>WYKRES</h2>
+            </div>
+        </div>
+
+        <div class="row h-20">
+            <div class="col">
+                <button class="btn btn-primary"
+                    @onclick="@(e => NavigationManager.NavigateTo("/ScorePage"))">
+                    Score
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary"
+                    @onclick="@(e => NavigationManager.NavigateTo("/"))">
+                        START
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button class="btn btn-primary"
+                    @onclick="@(e => NavigationManager.NavigateTo("/EndPage"))">
+                        EXIT
+                    </button>
+                </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

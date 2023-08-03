@@ -1,0 +1,38 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<div class="container">
+
+    <div class="header">
+
+            <h1>CryptoWars</h1>
+
+    </div>
+
+    <div class="contener">
+        <div class="row h-50">
+            <div class="col">
+                <h1></h1>  
+                <h2>WELCOME TO THE APP THAT WILL HELP YOU LEARN HOW TO INVEST</h2>
+            </div>
+        </div>
+
+        <div class="row h-50">
+            <div class="col">
+                <button class="btn btn-primary" 
+                    @onclick="@(e => NavigationManager.NavigateTo("/ConfigPage"))">Start
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+            <p>&copy; 2023 CryptoWars. Wszelkie prawa zastrzeżone.</p>
+
+    </div>
+
+</div>
+
+
+

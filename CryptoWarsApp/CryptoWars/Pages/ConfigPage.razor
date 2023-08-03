@@ -1,0 +1,95 @@
+﻿@page "/ConfigPage"
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>CryptoWars</h1>
+
+    </div>
+
+    <div class="contener">
+
+        <div class="row">
+            <div class="col">
+                <h1></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">              
+                <h6>Choose a crypto</h6>
+            </div>
+            <div class="col-4">
+                <h6>ETH</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <h6>How much to invest</h6>
+            </div>
+            <div class="col-4">
+                <h6>100$</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <h6>Select a time range</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h6>2022</h6>
+            </div>
+            <div class="col-6">
+                <h6>2023</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <h6>How much do you want to allocate in one operation</h6>
+            </div>
+            <div class="col-4">
+                <h6>20%</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary"
+                @onclick="@(e => NavigationManager.NavigateTo("/RunPage"))">
+                    Play
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary"
+                @onclick="@(e => NavigationManager.NavigateTo("/"))">
+                    START
+                </button>
+            </div>
+
+            <div class="col">
+                <button class="btn btn-primary"
+                @onclick="@(e => NavigationManager.NavigateTo("/EndPage"))">
+                    EXIT
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
